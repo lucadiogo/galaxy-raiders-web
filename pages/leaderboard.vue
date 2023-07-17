@@ -32,7 +32,7 @@
             return {
                 info: json.map(data => [data.score, data.asteroidsDestroyed, data.date]),
             }
-        }
+        },
     }
 </script>
 

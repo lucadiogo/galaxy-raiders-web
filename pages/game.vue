@@ -38,8 +38,13 @@ onMounted(() => {
 
     const command = keyToCommand[event.code];
 
+    //redirect?
+    if (command == "PAUSE_GAME") {
+      window.location.href = "..";
+    }
+
     // Ignore if invalid key was pressed
-    if (command === undefined) return;
+    else if (command === undefined) return;
 
     console.log(`Triggering command: ${command}`);
     await $post("/ship/commands", { command })
