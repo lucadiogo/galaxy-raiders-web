@@ -1,5 +1,5 @@
-<template>
-  <div id="canvas">
+<template id = "game">
+  <div id="game_canvas">
     <div id="deep-space" />
     <div id="space-field">
       <SpaceObject id="spaceship" class="spaceship" :data="spaceField.ship" resolution="2" />
@@ -50,7 +50,7 @@ onMounted(() => {
 </script>
 
 <style>
-#canvas {
+#game_canvas {
   height: calc(100vh - 4rem);
   width: calc(100vw - 4rem);
 
